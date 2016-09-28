@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+<div class="app">
+    <img class="myimage" src="icon1.png">
+    
+    <form align="center" name="Calculadora">
+    <h1 > CALCULADORA </h1><br>
+    <input type="text" class="texto" name="input">
+    <br><br>
+   
+    <input type="button" class="botao"  value=" 1 " onClick="Calculadora.input.value +='1'"></input>
+
+    <input type="button" class="botao"  value=" 2 " onClick="Calculadora.input.value +='2'"></input>
+    <input type="button" class="botao"  value=" 3 " onClick="Calculadora.input.value +='3'"></input>
+    <input type="button" class="botao"  value=" + " onClick="Calculadora.input.value +='+'"></input><br>
+    <input type="button" class="botao"  value=" 4 " onClick="Calculadora.input.value +='4'"></input>
+    <input type="button" class="botao" value=" 5 " onClick="Calculadora.input.value +='5'"></input>
+    <input type="button" class="botao" value=" 6 " onClick="Calculadora.input.value +='6'"></input>
+    <input type="button" class="botao" value=" - " onClick="Calculadora.input.value +='-'"></input><br>
+    <input type="button" class="botao" value=" 7 " onClick="Calculadora.input.value +='7'"></input>
+    <input type="button" class="botao" value=" 8 " onClick="Calculadora.input.value +='8'"></input>
+    <input type="button" class="botao" value=" 9 " onClick="Calculadora.input.value +='9'"></input>
+    <input type="button" class="botao" value=" * " onClick="Calculadora.input.value += '*'"></input><br>
+    <input type="button" class="botao" value=" C " onClick="Calculadora.input.value=''"></input>
+    <input type="button" class="botao" value=" 0 " onClick="Calculadora.input.value +='0'"></input>
+    <input type="button" class="botao" value=" = " onClick="Calculadora.input.value=eval(Calculadora.input.value)"></input>
+    <input type="button" class="botao" value=" / " onClick="Calculadora.input.value +='/'"></input><br><br>
+     </form>
+  </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
